@@ -1,19 +1,17 @@
 package Cargo;
 
 public class Cargo {
+    //Atributos
 
-    // Atributos
     public String nome;
 
-    private double SalarioBase;
+    public Double salarioBase;
 
     public String beneficios;
 
-    //Metodos
-
     public Cargo() {
         this.nome = "Desenvolvedor";
-        SalarioBase = 50;
+        this.salarioBase = 50.00;
         this.beneficios = "Vale alimentação";
     }
 
@@ -25,27 +23,30 @@ public class Cargo {
         this.nome = nome;
     }
 
+    public Double getSalarioBase() {
+        return salarioBase;
+    }
+
+    public void setSalarioBase(Double salarioBase) {
+        this.salarioBase = salarioBase;
+    }
+
     public String getBeneficios() {
         return beneficios;
-    }
-
-    public double getSalarioBase(int i) {
-        if (i == 1){
-            return SalarioBase;
-        } else {
-            return 0;
-        }
-    }
-
-    public  void verificarSalario(double SalarioBase){
-        if (SalarioBase == 0){
-            System.out.println("Você não tem acesso para ver o salário base!");
-        } else {
-            System.out.println(SalarioBase);
-        }
     }
 
     public void setBeneficios(String beneficios) {
         this.beneficios = beneficios;
     }
+
+
+    public double getSalarioBase(int i){
+        if (i <= 3){
+            return salarioBase;
+        } else {
+            System.out.println("ERROR");
+            return 0.0;
+        }
+    }
 }
+
