@@ -7,6 +7,9 @@
 ## Segunda versão: Aplicado conceitos da aula de Herança e Polimorfismo [29-11-23]
 ![image](https://github.com/TiagoUniverse/Java-Aula---Encapsulamento/assets/71237410/4bcf63f7-eb1f-4f94-ab3b-33c9ee3e2dad)
 
+## Aula Abstração [30-11]
+![image](https://github.com/TiagoUniverse/Java-Projeto-Principal-Curso/assets/71237410/f040ff7f-7a52-4a89-b072-bbea169e5ea9)
+
 
 
 ## ➡️Introdução
