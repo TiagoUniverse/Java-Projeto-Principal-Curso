@@ -1,52 +1,25 @@
 package Cargo;
 
-public class Cargo {
-    //Atributos
+import Senioriadade.Senioriedade;
 
-    public String nome;
-
-    public Double salarioBase;
-
-    public String beneficios;
+public abstract class Cargo {
+    protected String nome;
+    protected double salario;
+    protected String beneficios;
+    protected Senioriedade senioriedade;
 
     public Cargo() {
         this.nome = "Desenvolvedor";
-        this.salarioBase = 50.00;
+        this.salario = 50;
         this.beneficios = "Vale alimentação";
     }
 
-    public String getNome() {
-        return nome;
-    }
+    public abstract String getNome();
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+   public abstract double calcularSalario();
 
-    public Double getSalarioBase() {
-        return salarioBase;
-    }
+   public abstract String beneficios();
 
-    public void setSalarioBase(Double salarioBase) {
-        this.salarioBase = salarioBase;
-    }
-
-    public String getBeneficios() {
-        return beneficios;
-    }
-
-    public void setBeneficios(String beneficios) {
-        this.beneficios = beneficios;
-    }
-
-
-    public double getSalarioBase(int i){
-        if (i <= 3){
-            return salarioBase;
-        } else {
-            System.out.println("ERROR");
-            return 0.0;
-        }
-    }
+   public Senioriedade getSenioriedade(){ return senioriedade;}
 }
 

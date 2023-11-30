@@ -1,28 +1,14 @@
 import Cargo.Cargo;
-import CargoJunior.CargoJunior;
-import CargoPleno.CargoPleno;
-import CargoSenior.CargoSenior;
+import Cargo.CargoJunior;
+import Cargo.CargoPleno;
+import Cargo.CargoSenior;
+import Interfaces.Beneficios;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-
-        // 1ª Versão
-//    Cargo desenvolvedor = new Cargo();
-//
-//        System.out.println(desenvolvedor.getNome());
-//        desenvolvedor.verificarSalario(desenvolvedor.getSalarioBase(1));
-//        System.out.println(desenvolvedor.getBeneficios());
-//
-//        desenvolvedor.setNome("Web Design");
-//        desenvolvedor.setBeneficios("GymPass");
-//
-//        System.out.println(desenvolvedor.getNome());
-//        desenvolvedor.verificarSalario(desenvolvedor.getSalarioBase(0));
-//        System.out.println(desenvolvedor.getBeneficios());
-
 
         List<Cargo> listaCargo = new ArrayList<>();
 
@@ -39,8 +25,8 @@ public class Main {
 
     private static void exibirInformacoes(Cargo cargo, int codigoSalario ){
         System.out.println("Nome do cargo: " + cargo.getNome());
-        System.out.println("Salário base: " + cargo.getSalarioBase(codigoSalario));
-        System.out.println("Benefício: " + cargo.getBeneficios());
+        System.out.println("Salário base: " + cargo.calcularSalario());
+        System.out.println("Benefício: " + ((Beneficios)cargo).obterBeneficios());
         System.out.println("--------------------------------");
     }
 
