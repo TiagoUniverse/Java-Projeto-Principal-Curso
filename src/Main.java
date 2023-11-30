@@ -28,7 +28,6 @@ public class Main {
         System.out.println("Benefício: " + ((Beneficios)cargo).obterBeneficios());
         System.out.println("--------------------------------");
     }
-
 }
 
 
