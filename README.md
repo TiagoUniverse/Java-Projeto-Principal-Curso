@@ -1,5 +1,4 @@
-# Java-Aula---Encapsulamento
-
+# Java-Projeto-Principal-Curso
 
 ## Primeira versão
 ![image](https://github.com/TiagoUniverse/Java-Aula---Encapsulamento/assets/71237410/419a2756-7b8c-4ebf-bf7f-261d3abba04c)
@@ -12,7 +11,7 @@
 
 ## ➡️Introdução
 ----------------------
-Curso de estudo de Java do + Conectado.
+Projeto principal do curso de estudo de Java do + Conectado. Anteriormente este repositório foi utilizado para a aula de encapsulamento, herança e polimorfismo e agora a aula de abstração.
 
 ---
 
