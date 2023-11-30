@@ -16,7 +16,7 @@ public abstract class Cargo {
 
     public abstract String getNome();
 
-   public abstract double calcularSalario();
+   public abstract double calcularSalario(int nivel);
 
    public abstract String beneficios();
 

@@ -22,10 +22,9 @@ public class Main {
         }
 
     }
-
     private static void exibirInformacoes(Cargo cargo, int codigoSalario ){
         System.out.println("Nome do cargo: " + cargo.getNome());
-        System.out.println("Salário base: " + cargo.calcularSalario());
+        System.out.println("Salário base: " + cargo.calcularSalario(codigoSalario));
         System.out.println("Benefício: " + ((Beneficios)cargo).obterBeneficios());
         System.out.println("--------------------------------");
     }

@@ -14,7 +14,15 @@ public class CargoJunior extends Cargo implements Beneficios {
     public String getNome() { return super.nome + " " + senioriedade.name(); }
 
     @Override
-    public double calcularSalario() { return salario + (10 * senioriedade.ordinal()); }
+    public double calcularSalario(int nivel) {
+        if (nivel == 1){
+            return salario + (10 * senioriedade.ordinal());
+        } else {
+            System.err.println("Acesso negado!");
+            return 0;
+        }
+
+    }
 
     @Override
     public String beneficios() { return null; }
